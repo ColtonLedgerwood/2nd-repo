@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Enemyspawn : MonoBehaviour
 {
-    public static Enemyspawn instantce;
-    void Awake() { instantce = this;}
     //Enemy Prefabs
     public List<GameObject> prefabs;
     //Enemy spawn root points
