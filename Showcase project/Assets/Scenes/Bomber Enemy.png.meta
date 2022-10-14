@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: be3b63d724677af4e81a9d47044960ab
+guid: 020457586f126844fab838a97a52a14f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Barracks (1)_0
+      name: Bomber Enemy_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 32
-        height: 32
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c344f1a60be612b41a73f56bac129f4f
-      internalID: -1948871933
+      spriteID: 2559ab2802a7280468bfbb43d5cd3776
+      internalID: 1399477353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barracks (1)_1
+      name: Bomber Enemy_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,8 +151,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0da6fc308565aa469692830507f7056
-      internalID: -87063518
+      spriteID: c4701f2bf5f643043ab9932908a6bc1e
+      internalID: 1288013620
       vertices: []
       indices: 
       edges: []
@@ -168,8 +168,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Barracks (1)_1: -87063518
-      Barracks (1)_0: -1948871933
+      Bomber Enemy_1: 1288013620
+      Bomber Enemy_0: 1399477353
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
