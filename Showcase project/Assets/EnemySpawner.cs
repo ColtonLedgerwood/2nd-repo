@@ -1,3 +1,4 @@
+using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,6 +18,8 @@ public class EnemySpawner : MonoBehaviour
     private float enemy2Interval = 4.0f;
     [SerializeField]
     private float enemy3Interval = 4.5f;
+    [SerializeField]
+    public GameObject target;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +32,7 @@ public class EnemySpawner : MonoBehaviour
     {
         yield return new WaitForSeconds(interval);
         GameObject newEnemy = Instantiate(enemy, transform.position, Quaternion.identity);
+        newEnemy.GetComponent<AIDestinationSetter>().target = target.transform;
         StartCoroutine(spawnEnemy(interval, enemy));
     }
 }
