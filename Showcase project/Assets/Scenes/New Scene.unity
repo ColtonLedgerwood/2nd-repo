@@ -194,27 +194,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8844172038351596112, guid: 14267589149f0d347b752829fc115f95, type: 3}
   m_PrefabInstance: {fileID: 152616274}
   m_PrefabAsset: {fileID: 0}
---- !u!50 &152616281
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152616276}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &152616282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,8 +240,8 @@ MonoBehaviour:
   prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
   bulletSpeed: 10
   bulletLifetime: 2
-  player: {fileID: 1643783654}
-  close: 25
+  player: {fileID: 152616276}
+  close: 10
   shootDelay: 0.5
 --- !u!212 &423964918
 SpriteRenderer:
@@ -324,8 +303,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 423964916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.2254, y: 3.9657, z: 0}
-  m_LocalScale: {x: 0.6414852, y: 0.6988469, z: 1}
+  m_LocalPosition: {x: -12.2254, y: 4.2011, z: 0}
+  m_LocalScale: {x: 0.7885947, y: 0.81654507, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3590,7 +3569,7 @@ MonoBehaviour:
   bulletSpeed: 10
   bulletLifetime: 2
   player: {fileID: 1643783654}
-  close: 15
+  close: 10
   shootDelay: 0.5
 --- !u!212 &484803093
 SpriteRenderer:
@@ -3652,8 +3631,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484803091}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.39, y: 10.09, z: 0}
-  m_LocalScale: {x: 0.72167087, y: 0.611491, z: 1}
+  m_LocalPosition: {x: -12.2134, y: 9.5014, z: 0}
+  m_LocalScale: {x: 0.6334105, y: 0.9057287, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3692,8 +3671,8 @@ MonoBehaviour:
   prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
   bulletSpeed: 10
   bulletLifetime: 2
-  player: {fileID: 1643783654}
-  close: 15
+  player: {fileID: 1874760039}
+  close: 10
   shootDelay: 0.5
 --- !u!212 &488166038
 SpriteRenderer:
@@ -13391,7 +13370,7 @@ MonoBehaviour:
   bulletSpeed: 10
   bulletLifetime: 2
   player: {fileID: 1643783654}
-  close: 15
+  close: 10
   shootDelay: 0.5
 --- !u!212 &1049517379
 SpriteRenderer:
@@ -13538,8 +13517,8 @@ MonoBehaviour:
   prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
   bulletSpeed: 10
   bulletLifetime: 2
-  player: {fileID: 1643783654}
-  close: 15
+  player: {fileID: 152616276}
+  close: 10
   shootDelay: 0.5
 --- !u!212 &1105649997
 SpriteRenderer:
@@ -13641,8 +13620,8 @@ MonoBehaviour:
   prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
   bulletSpeed: 10
   bulletLifetime: 2
-  player: {fileID: 1643783654}
-  close: 15
+  player: {fileID: 1874760039}
+  close: 10
   shootDelay: 0.5
 --- !u!212 &1355659552
 SpriteRenderer:
@@ -14034,27 +14013,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8207599798457042756, guid: a365e378e0b2b234fbc355cfb55ea0ec, type: 3}
   m_PrefabInstance: {fileID: 1643783652}
   m_PrefabAsset: {fileID: 0}
---- !u!50 &1643783660
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1643783654}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!114 &1643783661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14068,32 +14026,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
---- !u!61 &1643783662
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1643783654}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.1540041, y: 0.14300394}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
-    newSize: {x: 2, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.94397163, y: 1.2739801}
-  m_EdgeRadius: 0
 --- !u!1 &1655595667
 GameObject:
   m_ObjectHideFlags: 0
@@ -14128,7 +14060,7 @@ MonoBehaviour:
   bulletSpeed: 10
   bulletLifetime: 2
   player: {fileID: 1643783654}
-  close: 15
+  close: 10
   shootDelay: 0.5
 --- !u!212 &1655595669
 SpriteRenderer:
@@ -14320,27 +14252,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 220079819418658033, guid: 9291752fad8858544bbe20da7c21487b, type: 3}
   m_PrefabInstance: {fileID: 1874760037}
   m_PrefabAsset: {fileID: 0}
---- !u!50 &1874760044
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1874760039}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &1874760045
 MonoBehaviour:
   m_ObjectHideFlags: 0
