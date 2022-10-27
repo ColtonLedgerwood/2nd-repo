@@ -135,7 +135,8 @@ GameObject:
   - component: {fileID: 24706122}
   - component: {fileID: 24706121}
   - component: {fileID: 24706120}
-  m_Layer: 0
+  - component: {fileID: 24706123}
+  m_Layer: 10
   m_Name: Arrow Tower_0 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +156,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969785379}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &24706120
 BoxCollider2D:
@@ -247,6 +248,159 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &24706123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24706118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54fc6edba72bd64499ffd65bdfe79ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
+  bulletSpeed: 10
+  bulletLifetime: 2
+  player: {fileID: 1643783654}
+  close: 10
+  shootDelay: 0.5
+--- !u!1 &77173083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 77173084}
+  - component: {fileID: 77173086}
+  - component: {fileID: 77173085}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &77173084
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77173083}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 969785379}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -447, y: 218.5}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &77173085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77173083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Enemies killed:'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &77173086
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77173083}
+  m_CullTransparentMesh: 1
 --- !u!1 &93814160
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,7 +413,8 @@ GameObject:
   - component: {fileID: 93814164}
   - component: {fileID: 93814163}
   - component: {fileID: 93814162}
-  m_Layer: 0
+  - component: {fileID: 93814165}
+  m_Layer: 10
   m_Name: Arrow Tower_0 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +434,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969785379}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &93814162
 BoxCollider2D:
@@ -371,6 +526,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &93814165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93814160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54fc6edba72bd64499ffd65bdfe79ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
+  bulletSpeed: 10
+  bulletLifetime: 2
+  player: {fileID: 1874760039}
+  close: 10
+  shootDelay: 0.5
 --- !u!1 &131272039
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,7 +556,8 @@ GameObject:
   - component: {fileID: 131272043}
   - component: {fileID: 131272042}
   - component: {fileID: 131272041}
-  m_Layer: 0
+  - component: {fileID: 131272044}
+  m_Layer: 10
   m_Name: Arrow Tower_0 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +577,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969785379}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &131272041
 BoxCollider2D:
@@ -495,6 +669,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &131272044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131272039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54fc6edba72bd64499ffd65bdfe79ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
+  bulletSpeed: 10
+  bulletLifetime: 2
+  player: {fileID: 1643783654}
+  close: 10
+  shootDelay: 0.5
 --- !u!1001 &152616274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -511,8 +703,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8211480342342917921, guid: 14267589149f0d347b752829fc115f95, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211480342342917921, guid: 14267589149f0d347b752829fc115f95, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 8211480342342917921, guid: 14267589149f0d347b752829fc115f95, type: 3}
       propertyPath: m_LocalPosition.y
@@ -554,6 +750,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy2
       objectReference: {fileID: 0}
+    - target: {fileID: 8844172038351596112, guid: 14267589149f0d347b752829fc115f95, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14267589149f0d347b752829fc115f95, type: 3}
 --- !u!4 &152616275 stripped
@@ -580,6 +780,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   itemDrops: []
+--- !u!61 &152616287
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152616276}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.04926601, y: 0.047526598}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0639534, y: 1.0019403}
+  m_EdgeRadius: 0
 --- !u!1 &159323004
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,7 +917,8 @@ GameObject:
   - component: {fileID: 330851455}
   - component: {fileID: 330851454}
   - component: {fileID: 330851453}
-  m_Layer: 0
+  - component: {fileID: 330851456}
+  m_Layer: 10
   m_Name: Arrow Tower_0 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -711,7 +938,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969785379}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &330851453
 BoxCollider2D:
@@ -803,6 +1030,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &330851456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330851451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54fc6edba72bd64499ffd65bdfe79ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
+  bulletSpeed: 10
+  bulletLifetime: 2
+  player: {fileID: 1874760039}
+  close: 10
+  shootDelay: 0.5
 --- !u!1 &423964916
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,7 +1059,7 @@ GameObject:
   - component: {fileID: 423964919}
   - component: {fileID: 423964918}
   - component: {fileID: 423964917}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -918,7 +1163,8 @@ GameObject:
   - component: {fileID: 452528308}
   - component: {fileID: 452528307}
   - component: {fileID: 452528306}
-  m_Layer: 0
+  - component: {fileID: 452528309}
+  m_Layer: 10
   m_Name: Arrow Tower_0 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -938,7 +1184,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969785379}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &452528306
 BoxCollider2D:
@@ -1030,6 +1276,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &452528309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452528304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54fc6edba72bd64499ffd65bdfe79ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
+  bulletSpeed: 10
+  bulletLifetime: 2
+  player: {fileID: 152616276}
+  close: 10
+  shootDelay: 0.5
 --- !u!1 &458078376
 GameObject:
   m_ObjectHideFlags: 0
@@ -4350,8 +4614,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484803091}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.2134, y: 9.5014, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.213408, y: 9.501393, z: 0}
   m_LocalScale: {x: 0.6334105, y: 0.9057287, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4492,7 +4756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACAn+uHDsqlXAIAABYFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VEtz2jAQ/iuMziVjHoFJb61DSA8JTGgmF1+EtMYaZMmjB49k+O9dyTZ26fTE8u23u98+5C8ilK2AOW2WRvAXzYF8H5Bgk2+DzvkMJ7rTaiM+oeV8CO6KQKKR80ad0IiPQpjVJTgj2A+1k4GcIOiVyLUpF3wHqbbOIpxTaQFdRrsQrRD6GpAT/gwfQsgZrfE8WJ9oPSSDC5oMlAPTUVtiS6tZXjFJywp4kNyRp5M2bU1T2EzDCMKZllLYRglx5yp2mtLKeuwDCVxQ7CyWH92FXAWIXeFCwn74Ks8tuEaUoedHYXBEdV7yU9dzK6nd18oOVPooIRlPo6w668s/hOEounOjy+e28CgJRVwh2P6Nnhm1rjfZPvzY0x4ndKRyT7cSPgpQr3pptFccnc74EOotjB+7v9fe0gLYvsNrqTegr/6/n9DDJbZ/SqUot8F1N62BjdRx5HH7YHA5v1BwvA3bpEA0qHi38Jvu+kfUOJ6EsQ5dTZcqyNtqbwKVLOLMQjfepdooiHAjugJFpTuvMY273eGNr1f2xvNEw3Npije+9hXchES44yfJjWutj9dl2UIfX8AWK++kUNCJDo5XnFOqlapPrD+TNmzjTU5ZL2znBf/7tMhsvJ1PEzabbWE+v5/OhzCd8HzG7hMY0S2dTUi8PaGwTyrXtdBmPLg11SVXeGftV2SwNLSK584NPS7FZ6n7AoXK9YYZALWqU1yVg8Eq+DL5gguc0AacEyounHxlRGq2B55da2ax1cXJGZp1WTJSiYN2AclIGr8bGQnw9ZjXBg4CjqF4m+xCLn8AUEsDBBQAAAgIAACAn+tEr9bIbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrSSmVGSuYlBsplZUqq5uamJuW6qiXFKmlmyqUGqYWJSopmxUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACAn+uHDsqlXAIAABYFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACAn+tEr9bIbQAAAHgAAAAJACQAAAAAAAAAAAAAAKkCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAYQMAAAAA
+    dataString: UEsDBBQAAAgIAACAn+uqXhoJXAIAABUFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VEtz2jAQ/iuMziVjHoFJb61DSA8JTGgmF1+EtMYaZMmjB49k+O9dyTZ26fTE8u23u98+5C8ilK2AOW2WRvAXzYF8H5Bgk2+DzvkMJ7rTaiM+oeV8CO6KQKKR80ad0IiPQpjVJTgj2A+1k4GcIOiVyLUpF3wHqbbOIpxTaQFdRrsQrRD6GpAT/gwfQsgZrfE8WJ9oPSSDC5oMlAPTUVtiS6tZXjFJywp4kNyRp5M2bU1T2EzDCMKZllLYRglx5yp2mtLKeuwDCVxQ7CyWH92FXAWIXeFCwn74Ks8tuEaUoedHYXBEdV7yU9dzK6nd18oOVPooIRlPo6w668s/hOEounOjy+e28CgJRVwh2P6Nnhm1rjfZPvzY0x4ndKRyT7cSPgpQr3pptFccnc74EOotjB+7v9fe0gLYvsNrqTegr/6/n9DDJbZ/SqUot8F1N62BjdRx5HH7YHA5v1BwvA3bpEA0qHi38Jvu+kfUOJ6EsQ5dTZcqyNtqbwKVLOLMQjfepdooiHAjugJFpTuvMY273eGNr1f2xvNEw3Npije+9hXchES44yfJjWutj9dl2UIfX8AWK++kUNCJDo5XnFOqlapPrD+TNmzjTU5ZL2znBf/7tMhsvJ1PEzabbWE+v5/OhzCd8HzG7hMY0S2dTUi8PaGwTyrXtdBmPLg11SVXeGftV2SwNLSK584NPS7FZ6l7Ixcq1xtmANSqznAVDgaL4MPkCy5wQBtwTqi4b/KVEanZHnh2TZTFThcnZ2jWZclIJQ7aBSQjafxsZCTA11teGzgIOIbibbILufwBUEsDBBQAAAgIAACAn+tEr9bIbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrSSmVGSuYlBsplZUqq5uamJuW6qiXFKmlmyqUGqYWJSopmxUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACAn+uqXhoJXAIAABUFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACAn+tEr9bIbQAAAHgAAAAJACQAAAAAAAAAAAAAAKkCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAYQMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -4560,7 +4824,8 @@ GameObject:
   - component: {fileID: 517959999}
   - component: {fileID: 517959998}
   - component: {fileID: 517959997}
-  m_Layer: 0
+  - component: {fileID: 517960000}
+  m_Layer: 10
   m_Name: Arrow Tower_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4580,7 +4845,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969785379}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &517959997
 BoxCollider2D:
@@ -4672,6 +4937,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &517960000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517959995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54fc6edba72bd64499ffd65bdfe79ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
+  bulletSpeed: 10
+  bulletLifetime: 2
+  player: {fileID: 1874760039}
+  close: 10
+  shootDelay: 0.5
 --- !u!1 &553002316
 GameObject:
   m_ObjectHideFlags: 0
@@ -4736,7 +5019,8 @@ GameObject:
   - component: {fileID: 607951454}
   - component: {fileID: 607951453}
   - component: {fileID: 607951452}
-  m_Layer: 0
+  - component: {fileID: 607951455}
+  m_Layer: 10
   m_Name: Arrow Tower_0 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4756,7 +5040,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969785379}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &607951452
 BoxCollider2D:
@@ -4848,6 +5132,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &607951455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607951450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54fc6edba72bd64499ffd65bdfe79ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
+  bulletSpeed: 10
+  bulletLifetime: 2
+  player: {fileID: 1874760039}
+  close: 10
+  shootDelay: 0.5
 --- !u!1 &637803934
 GameObject:
   m_ObjectHideFlags: 0
@@ -5048,7 +5350,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 812588455}
-  - {fileID: 1730806048}
   - {fileID: 1309955368}
   - {fileID: 517959996}
   - {fileID: 24706119}
@@ -5063,6 +5364,7 @@ RectTransform:
   - {fileID: 1481972258}
   - {fileID: 1140801129}
   - {fileID: 1492545182}
+  - {fileID: 77173084}
   m_Father: {fileID: 282573682}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5128,7 +5430,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -14767,7 +15069,8 @@ GameObject:
   - component: {fileID: 1140801132}
   - component: {fileID: 1140801131}
   - component: {fileID: 1140801130}
-  m_Layer: 0
+  - component: {fileID: 1140801133}
+  m_Layer: 10
   m_Name: Arrow Tower_0 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14787,7 +15090,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969785379}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1140801130
 BoxCollider2D:
@@ -14879,6 +15182,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1140801133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140801128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54fc6edba72bd64499ffd65bdfe79ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
+  bulletSpeed: 10
+  bulletLifetime: 2
+  player: {fileID: 152616276}
+  close: 10
+  shootDelay: 0.5
 --- !u!1 &1309955367
 GameObject:
   m_ObjectHideFlags: 0
@@ -14890,8 +15211,9 @@ GameObject:
   - component: {fileID: 1309955368}
   - component: {fileID: 1309955371}
   - component: {fileID: 1309955370}
-  - component: {fileID: 1309955369}
-  m_Layer: 0
+  - component: {fileID: 1309955372}
+  - component: {fileID: 1309955373}
+  m_Layer: 10
   m_Name: Arrow Tower_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14911,34 +15233,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969785379}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1309955369
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309955367}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4, y: 4}
-    newSize: {x: 4, y: 4}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4, y: 4}
-  m_EdgeRadius: 0
 --- !u!114 &1309955370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15003,6 +15299,50 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1309955372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309955367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54fc6edba72bd64499ffd65bdfe79ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
+  bulletSpeed: 10
+  bulletLifetime: 2
+  player: {fileID: 152616276}
+  close: 10
+  shootDelay: 0.5
+--- !u!61 &1309955373
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309955367}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 4}
+    newSize: {x: 4, y: 4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4}
+  m_EdgeRadius: 0
 --- !u!1 &1355659550
 GameObject:
   m_ObjectHideFlags: 0
@@ -15118,7 +15458,8 @@ GameObject:
   - component: {fileID: 1394004512}
   - component: {fileID: 1394004511}
   - component: {fileID: 1394004510}
-  m_Layer: 0
+  - component: {fileID: 1394004513}
+  m_Layer: 10
   m_Name: Arrow Tower_0 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15138,7 +15479,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969785379}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1394004510
 BoxCollider2D:
@@ -15230,6 +15571,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1394004513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394004508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54fc6edba72bd64499ffd65bdfe79ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
+  bulletSpeed: 10
+  bulletLifetime: 2
+  player: {fileID: 152616276}
+  close: 10
+  shootDelay: 0.5
 --- !u!1 &1395245398
 GameObject:
   m_ObjectHideFlags: 0
@@ -15326,7 +15685,8 @@ GameObject:
   - component: {fileID: 1414006500}
   - component: {fileID: 1414006499}
   - component: {fileID: 1414006498}
-  m_Layer: 0
+  - component: {fileID: 1414006501}
+  m_Layer: 10
   m_Name: Arrow Tower_0 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15346,7 +15706,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969785379}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1414006498
 BoxCollider2D:
@@ -15438,6 +15798,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1414006501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414006496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54fc6edba72bd64499ffd65bdfe79ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
+  bulletSpeed: 10
+  bulletLifetime: 2
+  player: {fileID: 1643783654}
+  close: 10
+  shootDelay: 0.5
 --- !u!1 &1481972257
 GameObject:
   m_ObjectHideFlags: 0
@@ -15450,7 +15828,8 @@ GameObject:
   - component: {fileID: 1481972261}
   - component: {fileID: 1481972260}
   - component: {fileID: 1481972259}
-  m_Layer: 0
+  - component: {fileID: 1481972262}
+  m_Layer: 10
   m_Name: Arrow Tower_0 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15470,7 +15849,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969785379}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1481972259
 BoxCollider2D:
@@ -15562,6 +15941,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1481972262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481972257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54fc6edba72bd64499ffd65bdfe79ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
+  bulletSpeed: 10
+  bulletLifetime: 2
+  player: {fileID: 1643783654}
+  close: 10
+  shootDelay: 0.5
 --- !u!1 &1492545181
 GameObject:
   m_ObjectHideFlags: 0
@@ -15574,7 +15971,8 @@ GameObject:
   - component: {fileID: 1492545185}
   - component: {fileID: 1492545184}
   - component: {fileID: 1492545183}
-  m_Layer: 0
+  - component: {fileID: 1492545186}
+  m_Layer: 10
   m_Name: Arrow Tower_0 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15594,7 +15992,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969785379}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1492545183
 BoxCollider2D:
@@ -15686,6 +16084,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1492545186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492545181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54fc6edba72bd64499ffd65bdfe79ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
+  bulletSpeed: 10
+  bulletLifetime: 2
+  player: {fileID: 1874760039}
+  close: 10
+  shootDelay: 0.5
 --- !u!1 &1520083406
 GameObject:
   m_ObjectHideFlags: 0
@@ -15913,6 +16329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy1
       objectReference: {fileID: 0}
+    - target: {fileID: 8207599798457042756, guid: a365e378e0b2b234fbc355cfb55ea0ec, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a365e378e0b2b234fbc355cfb55ea0ec, type: 3}
 --- !u!4 &1643783653 stripped
@@ -15939,6 +16359,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   itemDrops: []
+--- !u!61 &1643783667
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643783654}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20198822, y: 0.16634345}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1207542, y: 1.1445193}
+  m_EdgeRadius: 0
 --- !u!1 &1655595667
 GameObject:
   m_ObjectHideFlags: 0
@@ -16042,130 +16488,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1730806047
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1730806048}
-  - component: {fileID: 1730806050}
-  - component: {fileID: 1730806053}
-  - component: {fileID: 1730806052}
-  m_Layer: 0
-  m_Name: Arrow Tower_0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1730806048
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1730806047}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -522.73, y: -240.9, z: 0}
-  m_LocalScale: {x: 0.6755, y: 0.8534, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 969785379}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1730806050
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1730806047}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 8
-  m_Sprite: {fileID: -851175871, guid: 2a2d9a9c9daa06346b0dcfa22ce24d06, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4, y: 4}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!61 &1730806052
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1730806047}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4, y: 4}
-    newSize: {x: 4, y: 4}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4, y: 4}
-  m_EdgeRadius: 0
---- !u!114 &1730806053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1730806047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a67cb985c0ea3e748a38d34a3766ba15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1817219551
 GameObject:
   m_ObjectHideFlags: 0
@@ -16261,7 +16583,8 @@ GameObject:
   - component: {fileID: 1853782333}
   - component: {fileID: 1853782332}
   - component: {fileID: 1853782331}
-  m_Layer: 0
+  - component: {fileID: 1853782334}
+  m_Layer: 10
   m_Name: Arrow Tower_0 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16281,7 +16604,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 969785379}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1853782331
 BoxCollider2D:
@@ -16373,6 +16696,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1853782334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853782329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54fc6edba72bd64499ffd65bdfe79ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7000862726767140932, guid: 3098f87e270d7f84a8d712a4a87e64a5, type: 3}
+  bulletSpeed: 10
+  bulletLifetime: 2
+  player: {fileID: 152616276}
+  close: 10
+  shootDelay: 0.5
 --- !u!1001 &1874760037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16387,6 +16728,10 @@ PrefabInstance:
     - target: {fileID: 220079819418658033, guid: 9291752fad8858544bbe20da7c21487b, type: 3}
       propertyPath: m_Name
       value: Enemy3
+      objectReference: {fileID: 0}
+    - target: {fileID: 220079819418658033, guid: 9291752fad8858544bbe20da7c21487b, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5196077595609663510, guid: 9291752fad8858544bbe20da7c21487b, type: 3}
       propertyPath: m_RootOrder
@@ -16458,6 +16803,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   itemDrops: []
+--- !u!61 &1874760051
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874760039}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.04306221, y: 0.10312414}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0303459, y: 1.0785933}
+  m_EdgeRadius: 0
 --- !u!1 &1964277847
 GameObject:
   m_ObjectHideFlags: 0
